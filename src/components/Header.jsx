@@ -7,7 +7,7 @@ const Header = () => {
         <nav className="nav">
         <div className="brand">
           <div className="brand-text">
-            <strong>אוליבר הכלב המלוכלך - ספר ילדים</strong>
+            <strong>אוליבר הכלב המלוכלך</strong>
           </div>
         </div>
           <nav className="top-nav">

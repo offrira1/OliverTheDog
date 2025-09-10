@@ -26,6 +26,8 @@ body {
   font-family: 'Varela Round', 'Heebo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Hebrew', Arial, sans-serif;
   line-height: 1.6;
   direction: rtl;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 a {
@@ -70,8 +72,9 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -158,7 +161,8 @@ img {
 /* Hero Video Section */
 .hero-video {
   position: relative;
-  padding-top: 14px;
+  padding-top: 100px;
+  margin-top: 20px;
 }
 
 .video-card {
@@ -174,7 +178,8 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
+  min-height: 400px;
 }
 
 .video-over {
@@ -204,6 +209,10 @@ img {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.cta-mobile {
+  display: none;
 }
 
 .cloud {
@@ -360,9 +369,9 @@ img {
 
 .gallery-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
-  max-width: 1600px;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 60px;
+  max-width: 1800px;
   margin: 0 auto;
   align-items: center;
   justify-items: center;
@@ -379,8 +388,10 @@ img {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   background: #f8fdff;
   aspect-ratio: 1/1;
-  height: calc((100vw - 100px) / 3 + 20px);
-  width: calc((100vw - 100px) / 3 + 20px);
+  height: calc((100vw - 100px) / 2.5 + 40px);
+  width: calc((100vw - 100px) / 2.5 + 40px);
+  max-height: 600px;
+  max-width: 600px;
 }
 
 .featured-image img {
@@ -416,11 +427,12 @@ img {
 .small-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 30px;
   order: 1;
   justify-items: center;
   align-items: center;
-  height: calc((100vw - 100px) / 3 + 20px);
+  height: calc((100vw - 100px) / 2.5 + 40px);
+  max-height: 600px;
 }
 
 .gallery-item {
@@ -432,8 +444,10 @@ img {
   cursor: pointer;
   background: #f8fdff;
   aspect-ratio: 1;
-  height: calc(((100vw - 100px) / 3 + 20px - 25px) / 2);
-  width: calc(((100vw - 100px) / 3 + 20px - 25px) / 2);
+  height: calc(((100vw - 100px) / 2.5 + 40px - 30px) / 2);
+  width: calc(((100vw - 100px) / 2.5 + 40px - 30px) / 2);
+  max-height: 280px;
+  max-width: 280px;
 }
 
 .gallery-item:hover {
@@ -1359,8 +1373,14 @@ img {
 }
 
 @media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
   .container {
     padding: 10px;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .nav {
@@ -1389,14 +1409,29 @@ img {
   }
 
   .hero-video {
-    padding: 20px 0;
+    padding: 80px 0 20px 0;
     margin: 0;
   }
 
   .video-card {
     max-width: 100%;
-    height: 250px;
+    height: 350px;
     border-radius: 15px;
+  }
+
+  .cta-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .cta-mobile .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
   }
 
   .video-over {
@@ -1414,15 +1449,11 @@ img {
   }
 
   .cta {
-    flex-direction: column;
-    gap: 8px;
+    display: none;
   }
 
-  .cta .btn {
-    width: 100%;
-    text-align: center;
-    padding: 12px 20px;
-    font-size: 14px;
+  .cta-mobile {
+    display: flex;
   }
 
   .section {
@@ -1435,8 +1466,15 @@ img {
   }
 
   .kid-features {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    display: none;
+  }
+
+  .pill {
+    display: none;
+  }
+
+  #highlights {
+    display: none;
   }
 
   .kid-features article {
@@ -1469,7 +1507,9 @@ img {
   }
 
   .gallery-item {
-    height: 120px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
   }
 
   .featured-area {
@@ -1477,13 +1517,20 @@ img {
   }
 
   .featured-image {
-    height: 200px;
+    height: 300px;
+    max-height: 300px;
+    max-width: 300px;
   }
 
   .featured-media-large {
     max-width: 100%;
-    aspect-ratio: 16/9;
-    height: 200px;
+    aspect-ratio: 4/3;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .featured-media-overlay-large {
+    display: none;
   }
 
   .small-media-grid-below {
@@ -1494,6 +1541,10 @@ img {
   .media-item-small {
     height: 70px;
     width: 70px;
+  }
+
+  .media-overlay-small {
+    display: none;
   }
 
   .real-oliver-intro {
@@ -1515,8 +1566,9 @@ img {
   }
 
   .order-art img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
+    width: 100%;
   }
 
   .plan {
@@ -1580,6 +1632,8 @@ img {
 @media (max-width: 480px) {
   .container {
     padding: 8px;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .brand-text strong {
@@ -1592,7 +1646,12 @@ img {
   }
 
   .video-card {
-    height: 200px;
+    height: 300px;
+  }
+
+  .cta-mobile .btn {
+    padding: 10px 15px;
+    font-size: 13px;
   }
 
   .video-over h1 {
@@ -1634,15 +1693,29 @@ img {
   }
 
   .gallery-item {
-    height: 100px;
+    height: 120px;
+    max-height: 120px;
+    max-width: 120px;
   }
 
   .featured-image {
-    height: 150px;
+    height: 200px;
+    max-height: 200px;
+    max-width: 200px;
   }
 
   .featured-media-large {
-    height: 150px;
+    height: 200px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  .featured-media-overlay-large {
+    display: none;
+  }
+
+  .media-overlay-small {
+    display: none;
   }
 
   .small-media-grid-below {
@@ -1656,7 +1729,9 @@ img {
   }
 
   .order-art img {
-    max-width: 150px;
+    max-width: 120px;
+    height: auto;
+    width: 100%;
   }
 
   .plan {

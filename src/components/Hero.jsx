@@ -22,11 +22,12 @@ const Hero = () => {
         <div className="video-over">
           <h1>הכירו את אוליבר! 🫧</h1>
           <p>סיפור מצחיק וצבעוני על כלב שובב שמגלה כמה כיף להיות נקי.</p>
-            <div className="cta">
-              <a className="btn" href="https://wa.me/972546682114?text=היי%20אשמח%20לשמוע%20על%20הספר%20-%20אוליבר%20הכלב%20המלוכלך" target="_blank" rel="noopener noreferrer">הזמנה מהירה</a>
-              <a className="btn ghost" href="#highlights">עוד על הספר</a>
-            </div>
         </div>
+      </div>
+      
+      <div className="cta-mobile">
+        <a className="btn" href="https://wa.me/972546682114?text=היי%20אשמח%20לשמוע%20על%20הספר%20-%20אוליבר%20הכלב%20המלוכלך" target="_blank" rel="noopener noreferrer">הזמנה מהירה</a>
+        <a className="btn ghost" href="#gallery">עוד על הספר</a>
       </div>
 
       <div className="wave" aria-hidden="true"></div>

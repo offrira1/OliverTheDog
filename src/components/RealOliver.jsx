@@ -24,7 +24,7 @@ const RealOliver = () => {
     },
     {
       type: 'video',
-      src: '/Jumping_2.mp4',
+      src: '/jumping_2.mp4',
       title: 'אוליבר קופץ שוב!',
       description: 'עוד קפיצה מלאת אנרגיה - אוליבר לא מפסיק לזוז!'
     },

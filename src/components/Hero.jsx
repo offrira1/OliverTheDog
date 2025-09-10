@@ -14,9 +14,9 @@ const Hero = () => {
           muted 
           loop 
           playsInline 
-          poster="/assets/Oliver-rev-15.0_Page_01.png"
+          poster="/Oliver-rev-15.0_Page_01.png"
         >
-          <source src="/assets/trailer.mp4" type="video/mp4" />
+          <source src="/trailer.mp4" type="video/mp4" />
           הדפדפן לא תומך בוידאו. אפשר להטמיע GIF במקום.
         </video>
         <div className="video-over">

@@ -26,7 +26,7 @@ const Order = () => {
         </div>
 
         <div className="order-art">
-          <img src="/assets/Oliver-rev-15.0_Page_01.png" alt="כריכת הספר — אוליבר הכלב המלוכלך" />
+          <img src="/Oliver-rev-15.0_Page_01.png" alt="כריכת הספר — אוליבר הכלב המלוכלך" />
         </div>
       </div>
     </section>

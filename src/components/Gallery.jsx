@@ -5,25 +5,25 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: '/assets/Oliver-rev-15.0_Page_06.png',
+      src: '/Oliver-rev-15.0_Page_06.png',
       title: 'אוליבר בגן',
       subtitle: 'עמוד 6',
       alt: 'אוליבר מציץ לשיחים'
     },
     {
-      src: '/assets/Oliver-rev-15.0_Page_08.png',
+      src: '/Oliver-rev-15.0_Page_08.png',
       title: 'אוליבר בבוץ',
       subtitle: 'עמוד 8',
       alt: 'אוליבר מתגלגל בבוץ'
     },
     {
-      src: '/assets/Oliver-rev-15.0_Page_18.png',
+      src: '/Oliver-rev-15.0_Page_18.png',
       title: 'אוליבר המלוכלך',
       subtitle: 'עמוד 18',
       alt: 'אוליבר מלוכלך עם אשפה'
     },
     {
-      src: '/assets/Oliver-rev-15.0_Page_39.png',
+      src: '/Oliver-rev-15.0_Page_39.png',
       title: 'אוליבר באמבטיה',
       subtitle: 'עמוד 39',
       alt: 'אמבטיית בועות עם אוליבר'

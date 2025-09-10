@@ -6,31 +6,31 @@ const RealOliver = () => {
   const mediaItems = [
     {
       type: 'video',
-      src: '/assets/Jumping_ollie.mp4',
+      src: '/Jumping_ollie.mp4',
       title: 'אוליבר קופץ!',
       description: 'הכלב האמיתי שלנו אוהב לקפוץ ולשחק בפארק'
     },
     {
       type: 'image',
-      src: '/assets/Bug_Ollie.jpg',
+      src: '/Bug_Ollie.jpg',
       title: 'אוליבר עם החרק',
       description: 'רגע מתוק של אוליבר עם חבר קטן מהטבע'
     },
     {
       type: 'video',
-      src: '/assets/Smile.mp4',
+      src: '/Smile.mp4',
       title: 'אוליבר מחייך',
       description: 'החיוך הכי מתוק שיש! אוליבר תמיד מצליח להעלות חיוך על הפנים.'
     },
     {
       type: 'video',
-      src: '/assets/Jumping_2.mp4',
+      src: '/Jumping_2.mp4',
       title: 'אוליבר קופץ שוב!',
       description: 'עוד קפיצה מלאת אנרגיה - אוליבר לא מפסיק לזוז!'
     },
     {
       type: 'image',
-      src: '/assets/dirty_1.jpg',
+      src: '/dirty_1.jpg',
       title: 'אוליבר המלוכלך',
       description: 'כמו בסיפור - אוליבר לא מפחד להתלכלך!'
     }

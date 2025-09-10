@@ -20,8 +20,8 @@ const Hero = () => {
           הדפדפן לא תומך בוידאו. אפשר להטמיע GIF במקום.
         </video>
         <div className="video-over">
-          <h1>הכירו את אוליבר! 🫧</h1>
-          <p>סיפור מצחיק וצבעוני על כלב שובב שמגלה כמה כיף להיות נקי.</p>
+          <h1>אוליבר הכלב המלוכלך!</h1>
+          <p>סיפור ילדים מחורז, מקסים ומצחיק על הרפתקה אחת בלתי נשכחת בפארק.</p>
         </div>
       </div>
       

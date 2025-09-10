@@ -36,7 +36,7 @@ const Author = () => {
             <div className="author-card">
               <div className="author-avatar">👩‍💼</div>
               <h4>שירה רשתי</h4>
-              <p>כותבת ספרי ילדים</p>
+              <p>כותבת הספר "אוליבר הכלב המלוכלך"</p>
               <div className="author-badges">
                 <span className="badge">📚 סופרת</span>
                 <span className="badge">💝 אוהבת ילדים</span>

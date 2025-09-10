@@ -8,25 +8,25 @@ const RealOliver = () => {
       type: 'video',
       src: '/Jumping_ollie.mp4',
       title: 'אוליבר קופץ!',
-      description: 'הכלב האמיתי שלנו אוהב לקפוץ ולשחק בפארק'
+      description: 'אוליבר יעשה הכל כדי להגיע לכדור שלו'
     },
     {
       type: 'image',
       src: '/Bug_Ollie.jpg',
-      title: 'אוליבר עם החרק',
-      description: 'רגע מתוק של אוליבר עם חבר קטן מהטבע'
+      title: 'אוליבר מתחפש בפורים',
+      description: 'רגע מתוק של אוליבר מחופש לחיפושית'
     },
     {
       type: 'video',
       src: '/Smile.mp4',
       title: 'אוליבר מחייך',
-      description: 'החיוך הכי מתוק שיש! אוליבר תמיד מצליח להעלות חיוך על הפנים.'
+      description: 'החיוך הכי מתוק שיש!'
     },
     {
       type: 'video',
       src: '/jumping_2.mp4',
-      title: 'אוליבר קופץ שוב!',
-      description: 'עוד קפיצה מלאת אנרגיה - אוליבר לא מפסיק לזוז!'
+      title: 'אוליבר קופץ !',
+      description: 'עוד קפיצה מלאת אנרגיה - שמלכלכת את הסובבים!'
     },
     {
       type: 'image',
@@ -44,7 +44,7 @@ const RealOliver = () => {
     <section id="real-oliver" className="container section card">
       <div className="real-oliver-content">
         <div className="real-oliver-header">
-          <h2 className="kids-title">הכירו את אוליבר האמיתי! 🐕</h2>
+          <h2 className="kids-title">אוליבר שלנו</h2>
           <p className="real-oliver-intro">
             זהו אוליבר האמיתי - הכלב החמוד שעליו מבוסס הסיפור! 
             הוא אוהב לשחק, לקפוץ ולגלות הרפתקאות חדשות כל יום.
@@ -116,13 +116,12 @@ const RealOliver = () => {
           <div className="story-card">
             <h3>הסיפור של אוליבר האמיתי</h3>
             <p>
-              אוליבר הוא כלב אמיתי שחי עם המשפחה שלנו. הוא אוהב לחקור את העולם, 
+              אוליבר כלב בורדר קולי, היום בן 9. הוא אוהב לחקור את העולם, 
               לשחק עם ילדים, ולגלות דברים חדשים כל יום. לפעמים הוא מתלכלך 
               קצת כשהוא משחק, אבל זה חלק מהכיף!
             </p>
             <p>
-              הוא אוהב לקפוץ, לרוץ, ולחקור את הטבע. לפעמים הוא מוצא חרקים 
-              מעניינים או צמחים חדשים, וזה תמיד מרגש אותו!
+הוא אוהב לקפוץ, לרוץ ולשחק עם ילדים וכדורים, לעולם לא יסרב למשחק טוב או טיול ארוך.
             </p>
           </div>
         </div>

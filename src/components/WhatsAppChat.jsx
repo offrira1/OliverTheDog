@@ -49,15 +49,15 @@ const WhatsAppChat = () => {
     const lowerMessage = message.toLowerCase()
     
     if (lowerMessage.includes('הזמנה') || lowerMessage.includes('הזמנת')) {
-      return 'מעולה! 🎉 תוכלו להזמין את הספר דרך הכפתור "הזמנה מהירה" למעלה, או לגלול למטה לסקציית ההזמנות. יש לנו עותק מודפס ודיגיטלי!'
+      return 'מעולה! 🎉 תוכלו להזמין את הספר דרך הכפתור "הזמנה מהירה" למעלה, או לגלול למטה לסקציית ההזמנות. יש לנו עותק מודפס !'
     }
     
     if (lowerMessage.includes('מחיר') || lowerMessage.includes('כמה')) {
-      return 'המחירים זמינים בסקציית ההזמנות! 📖 יש לנו עותק מודפס עם מדבקת "אוליבר" מיוחדת, וספר דיגיטלי עם דפי פעילות להדפסה.'
+      return 'עלות הספר היא 40 שקלים לעותק מודפס, לא כולל משלוח. ניתן גם לאסוף את הספר בנקודות איסוף .'
     }
     
     if (lowerMessage.includes('איך') || lowerMessage.includes('קבל')) {
-      return 'קל מאוד! 🚀 בחרו את הפורמט שמתאים לכם (מודפס או דיגיטלי), מלאו את הפרטים, ותקבלו את הספר ישירות אליכם!'
+      return 'קל מאוד! 🚀 סמנו את הכתובת שלכם, מלאו את הפרטים, ותקבלו את הספר ישירות אליכם!'
     }
     
     if (lowerMessage.includes('ספר') || lowerMessage.includes('אוליבר')) {

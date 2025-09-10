@@ -60,11 +60,11 @@ const FAQ = () => {
   return (
     <section id="faq" className="faq-section">
       <div className="container">
-        <h2 className="faq-title">❓ שאלות ותשובות על אוליבר הכלב המלוכלך</h2>
+        <h2 className="faq-title">שאלות ותשובות על אוליבר הכלב המלוכלך ❓</h2>
         
         <div className="faq-grid">
           <div className="faq-category">
-            <h3 className="category-title">📚 על הספר</h3>
+            <h3 className="category-title">על הספר 📚</h3>
             <div className="faq-list">
               {bookFaqs.map((faq, index) => (
                 <div key={index} className="faq-item">
@@ -86,7 +86,7 @@ const FAQ = () => {
           </div>
 
           <div className="faq-category">
-            <h3 className="category-title">✍️ על הכותבת</h3>
+            <h3 className="category-title">על הכותבת ✍️</h3>
             <div className="faq-list">
               {faqs.map((faq, index) => (
                 <div key={index} className="faq-item">

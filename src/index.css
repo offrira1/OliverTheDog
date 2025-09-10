@@ -1360,12 +1360,116 @@ img {
 
 @media (max-width: 768px) {
   .container {
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .brand-text strong {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .top-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .top-nav a {
+    margin: 2px;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 15px;
+  }
+
+  .hero-video {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .video-card {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 15px;
+  }
+
+  .video-over {
     padding: 15px;
   }
-  
+
+  .video-over h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .video-over p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .cta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .section {
+    padding-block: 20px;
+  }
+
+  .kids-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .kid-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .kid-features article {
+    padding: 15px;
+  }
+
+  .sticker {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .kid-features h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .kid-features p {
+    font-size: 0.9rem;
+  }
+
   .gallery-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .small-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    order: 2;
+  }
+
+  .gallery-item {
+    height: 120px;
   }
 
   .featured-area {
@@ -1373,38 +1477,64 @@ img {
   }
 
   .featured-image {
-    height: calc((100vw - 60px) / 2 + 15px);
-    width: calc((100vw - 60px) / 2 + 15px);
+    height: 200px;
   }
 
-  .small-grid {
+  .featured-media-large {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    height: 200px;
+  }
+
+  .small-media-grid-below {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .media-item-small {
+    height: 70px;
+    width: 70px;
+  }
+
+  .real-oliver-intro {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .order {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .order-art {
+    order: 1;
+  }
+
+  .order-copy {
     order: 2;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    height: calc((100vw - 60px) / 2 + 15px);
   }
 
-  .gallery-item {
-    height: calc(((100vw - 60px) / 2 + 15px - 15px) / 2);
-    width: calc(((100vw - 60px) / 2 + 15px - 15px) / 2);
+  .order-art img {
+    max-width: 200px;
+    height: auto;
   }
-  
-  .gallery-overlay h3 {
-    font-size: 16px;
+
+  .plan {
+    padding: 15px;
   }
-  
-  .gallery-overlay p {
-    font-size: 12px;
+
+  .price {
+    margin-bottom: 10px;
   }
-  
-  .featured-overlay h3 {
-    font-size: 24px;
+
+  .old-price {
+    font-size: 0.9rem;
   }
-  
-  .featured-overlay p {
-    font-size: 16px;
+
+  .new-price {
+    font-size: 1.4rem;
   }
-  
+
   .author-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1414,52 +1544,154 @@ img {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .kid-features {
-    grid-template-columns: 1fr;
-  }
-  
-  .featured-media-large {
-    max-width: 100%;
-    aspect-ratio: 16/9;
-  }
 
-  .small-media-grid-below {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 10px;
-  }
-
-  .media-item-small {
-    height: 80px;
-    width: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  .small-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  
   .whatsapp-chat {
     bottom: 15px;
     right: 15px;
   }
+
+  .chat-window {
+    width: 90vw;
+    max-width: 350px;
+    height: 70vh;
+    max-height: 500px;
+  }
+
+  .chat-messages {
+    max-height: 300px;
+  }
+
+  .quick-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .quick-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .whatsapp-redirect-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 8px;
+  }
+
+  .brand-text strong {
+    font-size: 1.2rem;
+  }
+
+  .top-nav a {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .video-card {
+    height: 200px;
+  }
+
+  .video-over h1 {
+    font-size: 1.4rem;
+  }
+
+  .video-over p {
+    font-size: 0.8rem;
+  }
+
+  .cta .btn {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .kids-title {
+    font-size: 1.6rem;
+  }
+
+  .kid-features article {
+    padding: 12px;
+  }
+
+  .sticker {
+    font-size: 20px;
+  }
+
+  .kid-features h3 {
+    font-size: 1rem;
+  }
+
+  .kid-features p {
+    font-size: 0.8rem;
+  }
+
+  .small-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .gallery-item {
+    height: 100px;
+  }
+
+  .featured-image {
+    height: 150px;
+  }
+
+  .featured-media-large {
+    height: 150px;
+  }
+
+  .small-media-grid-below {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .media-item-small {
+    height: 60px;
+    width: 60px;
+  }
+
+  .order-art img {
+    max-width: 150px;
+  }
+
+  .plan {
+    padding: 12px;
+  }
+
+  .new-price {
+    font-size: 1.2rem;
+  }
+
+  .whatsapp-chat {
+    bottom: 10px;
+    right: 10px;
+  }
   
   .chat-window {
-    width: calc(100vw - 30px);
-    height: calc(100vh - 100px);
-    right: -15px;
-    bottom: 85px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 120px);
+    right: -10px;
+    bottom: 70px;
   }
   
   .quick-actions {
     justify-content: center;
+    flex-direction: column;
   }
   
   .quick-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .whatsapp-redirect-btn {
     font-size: 11px;
-    padding: 5px 10px;
+    padding: 8px 12px;
   }
 }
 

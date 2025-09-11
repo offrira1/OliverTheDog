@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
       
       <div className="cta-mobile">
-        <a className="btn" href="https://wa.me/972546682114?text=היי%20אשמח%20לשמוע%20על%20הספר%20-%20אוליבר%20הכלב%20המלוכלך" target="_blank" rel="noopener noreferrer">הזמנה מהירה</a>
+        <a className="btn" href="#order">הזמנה מהירה</a>
         <a className="btn ghost" href="#gallery">עוד על הספר</a>
       </div>
 

@@ -49,7 +49,14 @@ const WhatsAppChat = () => {
     const lowerMessage = message.toLowerCase()
     
     if (lowerMessage.includes('הזמנה') || lowerMessage.includes('הזמנת')) {
-      return 'מעולה! 🎉 תוכלו להזמין את הספר דרך הכפתור "הזמנה מהירה" למעלה, או לגלול למטה לסקציית ההזמנות. יש לנו עותק מודפס !'
+      // Scroll to order section
+      setTimeout(() => {
+        const orderSection = document.getElementById('order')
+        if (orderSection) {
+          orderSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 500)
+      return 'מעולה! 🎉 אני מעביר אתכם ישירות לחלק ההזמנות. שם תוכלו למלא את הפרטים ולהזמין את הספר!'
     }
     
     if (lowerMessage.includes('מחיר') || lowerMessage.includes('כמה')) {

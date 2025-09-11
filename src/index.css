@@ -48,7 +48,7 @@ img {
 }
 
 .section {
-  padding-block: 34px;
+  padding-block: 20px;
 }
 
 .card {
@@ -164,8 +164,8 @@ img {
 /* Hero Video Section */
 .hero-video {
   position: relative;
-  padding-top: 100px;
-  margin-top: 20px;
+  padding-top: 140px;
+  margin-top: 0;
 }
 
 .video-card {
@@ -335,7 +335,7 @@ img {
   margin-left: calc(-50vw + 50%);
   background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 50%, #ddeeff 100%);
   padding: 60px 0;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 80px;
   position: relative;
   overflow: hidden;
@@ -354,7 +354,7 @@ img {
 
 .gallery-background .kids-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #2c5aa0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -362,7 +362,7 @@ img {
 }
 
 .image-gallery {
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +372,7 @@ img {
 
 @media (max-width: 768px) {
   .image-gallery {
-    margin-top: 0;
+    margin-top: 10px;
   }
   
   #gallery.section {

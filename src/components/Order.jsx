@@ -79,7 +79,7 @@ ${formData.phone}`
           <div className="kids-plans">
             <div className="plan">
               <div className="price">
-                <span className="old-price">50 ש"ח</span>
+                <span className="old-price">70 ש"ח</span>
                 <span className="new-price">מחיר השקה! 40 ש"ח</span>
               </div>
 

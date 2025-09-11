@@ -12,10 +12,10 @@ const Header = () => {
           </div>
         </div>
           <nav className="top-nav">
+            <a href="#order" className="btn small">הזמנה</a>
             <a href="#highlights">על הספר</a>
             <a href="#gallery">קצת מהספר</a>
             <a href="#real-oliver">אוליבר האמיתי</a>
-            <a href="#order" className="btn small">הזמנה</a>
           </nav>
         </nav>
       </div>

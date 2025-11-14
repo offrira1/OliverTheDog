@@ -19,7 +19,7 @@ const Header = () => {
             <a href="#gallery">קצת מהספר</a>
             <a href="#real-oliver">אוליבר האמיתי</a>
             <Link to="/workshop" className="btn small">
-              סדנת אוליבר
+              פעילויות לילדים
             </Link>
           </nav>
         </nav>

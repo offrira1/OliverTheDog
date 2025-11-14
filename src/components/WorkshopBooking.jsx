@@ -26,18 +26,6 @@ const WorkshopBooking = () => {
 
   const galleryImages = [
     {
-      src: '/s1.jpg',
-      title: '',
-      subtitle: '',
-      alt: 'פעילות בגילאי 3-4'
-    },
-    {
-      src: '/s2.jpg',
-      title: '',
-      subtitle: '',
-      alt: 'פעילות בגילאי 3-4'
-    },
-    {
       src: '/s3.jpg',
       title: '',
       subtitle: '',

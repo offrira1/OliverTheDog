@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -7,8 +8,9 @@ const Header = () => {
         <nav className="nav">
         <div className="brand">
           <div className="brand-text">
-            
-            <strong>אוליבר הכלב המלוכלך</strong>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <strong>אוליבר הכלב המלוכלך</strong>
+            </Link>
           </div>
         </div>
           <nav className="top-nav">
@@ -16,6 +18,9 @@ const Header = () => {
             <a href="#highlights">על הספר</a>
             <a href="#gallery">קצת מהספר</a>
             <a href="#real-oliver">אוליבר האמיתי</a>
+            <Link to="/workshop" className="btn small">
+              סדנת אוליבר
+            </Link>
           </nav>
         </nav>
       </div>

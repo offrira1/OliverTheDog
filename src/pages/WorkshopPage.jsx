@@ -1,17 +1,9 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Gallery from './components/Gallery'
-import RealOliver from './components/RealOliver'
-import Author from './components/Author'
-import FAQ from './components/FAQ'
-import Order from './components/Order'
-import WhatsAppChat from './components/WhatsAppChat'
-import WorkshopPage from './pages/WorkshopPage'
+import Header from '../components/Header'
+import WorkshopBooking from '../components/WorkshopBooking'
+import WhatsAppChat from '../components/WhatsAppChat'
 
-function HomePage() {
+const WorkshopPage = () => {
   useEffect(() => {
     // Smooth scrolling for internal links
     const handleSmoothScroll = (e) => {
@@ -41,38 +33,20 @@ function HomePage() {
   }, [])
 
   return (
-    <>
+    <div className="App">
       <a className="sr-only" href="#main">דלג לתוכן</a>
       <Header />
       <main id="main">
-        <Hero />
-        <Features />
-        <Gallery />
-        <RealOliver />
-        <Author />
-        <Order />
-        <FAQ />
+        <WorkshopBooking />
       </main>
       <footer className="container foot">
         <div>© <span id="y">{new Date().getFullYear()}</span> אוליבר הכלב המלוכלך</div>
         <div className="muted small">מדיניות פרטיות • תנאי שימוש</div>
       </footer>
       <WhatsAppChat />
-    </>
+    </div>
   )
 }
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/workshop" element={<WorkshopPage />} />
-        </Routes>
-      </div>
-    </Router>
-  )
-}
+export default WorkshopPage
 
-export default App
